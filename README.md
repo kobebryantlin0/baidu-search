@@ -1,7 +1,8 @@
 # baidu-search
 realize searching with intelligence tips from baidu
+readme来源于我的博客：http://blog.csdn.net/kobebryantlin0/article/details/77103884
 ## 引言
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近打算给自己的小项目加入一个智能搜索的提示，就像在使用百度或者360搜索时，每输入一个字都会出现一个包含关键词的下拉列表的提示，这个轮子如果后端自己造的话，先不谈造出来好不好用，首先肯定会增加一些额外的工作量。俗话说：君子生非异也，善假于物也，于是自然第一想法先去看看有没有现成的接口，后来发现是我想多了，唉，看来这些大厂们还是比较小气的。看来只有亲自去抓一条它们的请求报文分析一下了，分析完后我派出了兵器库里的Jsonp帮我实现了这个功能。（包括搜索框和css样式的东西，完整的js代码等，我会打包放在[github(戳我)][1]上，在文章末尾也会有地址链接）,最后实现的效果如下图所示：
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近打算给自己的小项目加入一个智能搜索的提示，就像在使用百度或者360搜索时，每输入一个字都会出现一个包含关键词的下拉列表的提示，这个轮子如果后端自己造的话，先不谈造出来好不好用，首先肯定会增加一些额外的工作量。俗话说：君子生非异也，善假于物也，于是自然第一想法先去看看有没有现成的接口，后来发现是我想多了，唉，看来这些大厂们还是比较小气的。看来只有亲自去抓一条它们的请求报文分析一下了，分析完后我派出了兵器库里的Jsonp帮我实现了这个功能。最后实现的效果如下图所示：
 ![这里写图片描述](http://img.blog.csdn.net/20170811211016809?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQva29iZWJyeWFudGxpbjA=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 ## 实现过程：
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首先是去抓一个请求报文和一个返回的数据包看看，打开百度搜索，任意输入一个内容，然后通过F12打开chrome开发者工具，查看network,我在搜索框里输入了一个m，于是就在Headers里面拿到了这么一串Request URL,我把它粘贴在下面分析一下（其实很多参数我也不知道是干啥的)。
@@ -108,6 +109,4 @@ baidu.sug = function (data) {
                $list.html(sTr);
   })
 ```
-最后斗胆附上我的Github地址，文中介绍的代码完整实现都在这里了，如果对您有帮助，给个star么么哒。[github:][1] 
-<https://github.com/kobebryantlin0/baidu-search>
-[1]:https://github.com/kobebryantlin0/baidu-search
+最后斗胆附上我的Github地址，文中介绍的代码完整实现都在这里了，如果对您有帮助，给个star么么哒。 https://github.com/kobebryantlin0/baidu-search
