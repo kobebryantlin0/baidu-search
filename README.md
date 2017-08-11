@@ -1,5 +1,5 @@
 # baidu-search
-realize searching with intelligence tips from baidu
+realize searching with intelligence tips from baidu<br/>
 readme来源于我的博客：http://blog.csdn.net/kobebryantlin0/article/details/77103884
 ## 引言
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;最近打算给自己的小项目加入一个智能搜索的提示，就像在使用百度或者360搜索时，每输入一个字都会出现一个包含关键词的下拉列表的提示，这个轮子如果后端自己造的话，先不谈造出来好不好用，首先肯定会增加一些额外的工作量。俗话说：君子生非异也，善假于物也，于是自然第一想法先去看看有没有现成的接口，后来发现是我想多了，唉，看来这些大厂们还是比较小气的。看来只有亲自去抓一条它们的请求报文分析一下了，分析完后我派出了兵器库里的Jsonp帮我实现了这个功能。最后实现的效果如下图所示：
