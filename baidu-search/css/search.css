@@ -1,0 +1,31 @@
+input{
+    margin: 0;
+    padding: 0;
+    border:none;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.search{
+    width: 616px;
+    height: 38px;
+    border: 1px solid #37ab40;
+    margin: 100px auto;
+
+}
+.search-text{
+    width: 516px;
+    height: 38px;
+    float: left;
+    outline: none;
+    text-indent: 36px;
+}
+.search-btn{
+    width: 100px;
+    height: 38px;
+    float: left;
+    background-color: #37ab40;
+    font-size: 14px;
+}
